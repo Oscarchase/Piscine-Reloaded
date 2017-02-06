@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/06 14:37:34 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:37 by ochase           ###   ########.fr       */
+/*   Created: 2016/12/09 18:27:13 by ochase            #+#    #+#             */
+/*   Updated: 2017/02/06 14:44:49 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+void	ft_putchar(char c);
 
-void    ft_is_negative(int n)
+void	ft_putstr(char *str)
 {
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
+	int	i;
+
+	i = 0;
+	while (str[i])
+		ft_putchar(str[i++]);
 }

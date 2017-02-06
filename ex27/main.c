@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/06 14:37:34 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:37 by ochase           ###   ########.fr       */
+/*   Created: 2017/02/01 21:59:33 by ochase            #+#    #+#             */
+/*   Updated: 2017/02/01 22:41:32 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+#include "ft_display_file.h"
 
-void    ft_is_negative(int n)
+int		main(int ac, char **av)
 {
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
+	if (ac > 1)
+	{
+		if (ac == 2)
+			display_file(av[1]);
+		else
+		{
+			ft_putstr("Too many arguments.\n");
+			return (0);
+		}
+	}
+	else
+		ft_putstr("File name missing.\n");
+	return (0);
 }

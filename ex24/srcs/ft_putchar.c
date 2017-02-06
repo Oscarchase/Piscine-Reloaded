@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/06 14:37:34 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:37 by ochase           ###   ########.fr       */
+/*   Created: 2016/12/09 20:06:18 by ochase            #+#    #+#             */
+/*   Updated: 2016/12/09 20:06:50 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+#include "libft.h"
 
-void    ft_is_negative(int n)
+void	ft_putchar(char c)
 {
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
+	write(1, &c, 1);
 }

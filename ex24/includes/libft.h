@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/06 14:37:34 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:37 by ochase           ###   ########.fr       */
+/*   Created: 2016/12/09 20:07:49 by ochase            #+#    #+#             */
+/*   Updated: 2017/02/01 21:01:38 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+#ifndef LIBFT_H
+# define LIBFT_H
 
-void    ft_is_negative(int n)
-{
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
-}
+# include <unistd.h>
+
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
+int		ft_strcmp(char *s1, char *s2);
+int		ft_strlen(char *str);
+void	ft_swap(int *a, int *b);
+
+#endif

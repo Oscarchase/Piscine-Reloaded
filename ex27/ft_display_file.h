@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_display_file.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/06 14:37:34 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:37 by ochase           ###   ########.fr       */
+/*   Created: 2017/02/01 21:57:14 by ochase            #+#    #+#             */
+/*   Updated: 2017/02/01 22:15:19 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+#ifndef FT_DISPLAY_FILE_H
+# define FT_DISPLAY_FILE_H
 
-void    ft_is_negative(int n)
-{
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
-}
+# include <fcntl.h>
+# include <unistd.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+
+# define BUF_SIZE	32
+
+void	ft_putstr(char *str);
+void	display_file(char *file_name);
+
+#endif

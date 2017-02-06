@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_display_file.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/06 14:37:34 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:37 by ochase           ###   ########.fr       */
+/*   Created: 2017/02/01 22:07:31 by ochase            #+#    #+#             */
+/*   Updated: 2017/02/01 22:48:15 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+#include "ft_display_file.h"
 
-void    ft_is_negative(int n)
+void	display_file(char *file_name)
 {
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
+	int		fd;
+	int		ret;
+	char	buf[BUF_SIZE];
+
+	fd = open(file_name, O_RDONLY);
+	while ((ret = read(fd, buf, BUF_SIZE - 1)))
+	{
+		buf[ret] = '\0';
+		ft_putstr(buf);
+	}
+	close(fd);
 }
