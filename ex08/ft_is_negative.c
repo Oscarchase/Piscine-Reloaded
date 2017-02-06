@@ -6,16 +6,16 @@
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/06 14:37:34 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:37 by ochase           ###   ########.fr       */
+/*   Updated: 2017/02/06 15:00:33 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+void	ft_putchar(char c);
 
-void    ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
+	if (n >= 0)
+		ft_putchar('P');
+	else
+		ft_putchar('N');
 }

@@ -6,11 +6,11 @@
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/09 18:33:09 by ochase            #+#    #+#             */
-/*   Updated: 2016/12/09 18:37:13 by ochase           ###   ########.fr       */
+/*   Updated: 2017/02/06 15:01:49 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int		ft_strlen(char *str)
 {
 	int	i;
 

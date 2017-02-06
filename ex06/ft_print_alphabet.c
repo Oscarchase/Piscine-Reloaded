@@ -6,17 +6,17 @@
 /*   By: ochase <ochase@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/06 14:37:09 by ochase            #+#    #+#             */
-/*   Updated: 2017/02/06 14:37:10 by ochase           ###   ########.fr       */
+/*   Updated: 2017/02/06 14:59:30 by ochase           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void        ft_putchar(char c);
+void		ft_putchar(char c);
 
-void        ft_print_alphabet(void)
+void		ft_print_alphabet(void)
 {
-    int     c;
+	int		c;
 
-    c = 97;
-    while (c < 123)
-        ft_putchar(c++);
+	c = 97;
+	while (c < 123)
+		ft_putchar(c++);
 }
